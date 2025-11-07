@@ -1,0 +1,35 @@
+{
+  "name": "milkdown-suggestions-frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "React frontend for Milkdown suggestions feature",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@milkdown/core": "^7.3.6",
+    "@milkdown/ctx": "^7.3.6",
+    "@milkdown/react": "^7.3.6",
+    "@milkdown/preset-commonmark": "^7.3.6",
+    "@milkdown/theme-nord": "^7.3.6",
+    "@milkdown/plugin-history": "^7.3.6",
+    "@milkdown/plugin-listener": "^7.3.6",
+    "@milkdown/prose": "^7.3.6",
+    "@milkdown/utils": "^7.3.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5"
+  }
+}
