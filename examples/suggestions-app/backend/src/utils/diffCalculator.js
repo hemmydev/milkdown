@@ -70,7 +70,7 @@ function mergeAdjacentChanges(changes) {
       current.type === 'deletion' &&
       i + 1 < changes.length &&
       changes[i + 1].type === 'addition' &&
-      changes[i + 1].position.start === current.position.start
+      changes[i + 1].position.start === current.position.end
     ) {
       const next = changes[i + 1]
 

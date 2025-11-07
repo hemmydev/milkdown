@@ -49,7 +49,8 @@ function EditorWithSuggestions() {
       .use(nord)
       .use(commonmark)
       .use(history)
-      .use(listener)
+      .use(listener),
+    []
   )
 
   const handleGetSuggestions = useCallback(async (type) => {
