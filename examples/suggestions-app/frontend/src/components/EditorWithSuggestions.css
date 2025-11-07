@@ -1,0 +1,64 @@
+.editor-container {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  height: calc(100vh - 250px);
+}
+
+.editor-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 0;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.editor-header h2 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.editor-stats {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+.editor-wrapper {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  min-height: 0;
+}
+
+.editor-wrapper .milkdown {
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.editor-wrapper .editor {
+  min-height: 100%;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .editor-container {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .editor-section {
+    min-height: 400px;
+  }
+}
